@@ -6,45 +6,72 @@ html body{
   height: 100%;
   color: #efefef;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Cabin', sans-serif;
+  line-height:1.5em;
   background-image: url("images/kinegrams.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #191515;
+}
+
+.content:hover {
+	background-color: rgba(0,0,0,0.75);
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
+@media screen and (orientation: landscape){
   html body {
-    font-size: 1em;
+    font-size: 1.5em;
+  line-height:1.5em;
   }
+	.content {
+		max-width:600px;
+		margin:2em;
+	}
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
+@media screen and (orientation: portrait){
   html body {
     font-size: 2.5em;
+  line-height:2em;
   }
+	.content {
+		text-shadow: 0px 0px 25px black;
+		max-width:100%;
+		margin:2em;
+	}
 }
 
 a {
-    color: #FFFFFF;
+    color: #efefef;
     text-decoration: none;
-    padding: 1.5em;
     /* font-size: 1em; */
+}
+
+.main-nav-item{
+	margin-right:2em;
 }
 
 a:hover
 {
-     color:#DDD;
+     background-color:#efefef;
+     color:#010101;
      text-decoration:none;
      cursor:pointer;
 }
 
 nav {
-  margin-top: 2em;
-  margin-left: 2em;
-  text-transform: uppercase;
+	padding:2em;
+  text-transform: lowercase;
+}
+
+body > .content:before {
+ -webkit-filter: blur(12px);
+  filter: blur(12px);
+}
+
+.link {
+	text-decoration:underline;
 }
