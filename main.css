@@ -8,7 +8,7 @@ html body{
   padding: 0;
   font-family: 'Cabin', sans-serif;
   line-height:1.5em;
-  background-image: url("images/kinegrams.jpg");
+  background-image: url("/images/kinegrams.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
